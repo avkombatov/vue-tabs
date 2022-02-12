@@ -24,7 +24,6 @@ import AppTextFive from './AppTextFive.vue'
 export default {
   data () {
     return {
-      //   active: "one", // two
       buttons: ['one', 'two', 'three', 'four', 'five'],
       active: 0,
       button: ''
