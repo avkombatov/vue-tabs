@@ -19,12 +19,12 @@
         <app-tab-button
         :color="active === 'four' ? 'active' : ''"
         @action="active = 'four'"
-        >Three</app-tab-button
+        >Four</app-tab-button
       >
         <app-tab-button
         :color="active === 'five' ? 'active' : ''"
         @action="active = 'five'"
-        >Three</app-tab-button
+        >Five</app-tab-button
       >
       <hr />
 
