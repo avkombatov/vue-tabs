@@ -13,24 +13,24 @@
 </template>
 
 <script>
-import AppTabButton from "./AppTabButton.vue";
-import AppTextOne from "./AppTextOne.vue";
-import AppTextTwo from "./AppTextTwo.vue";
-import AppTextThree from "./AppTextThree.vue";
-import AppTextFour from "./AppTextFour.vue";
-import AppTextFive from "./AppTextFive.vue";
+import AppTabButton from './AppTabButton.vue'
+import AppTextOne from './AppTextOne.vue'
+import AppTextTwo from './AppTextTwo.vue'
+import AppTextThree from './AppTextThree.vue'
+import AppTextFour from './AppTextFour.vue'
+import AppTextFive from './AppTextFive.vue'
 export default {
-  data() {
+  data () {
     return {
-      buttons: ["one", "two", "three", "four", "five"],
+      buttons: ['one', 'two', 'three', 'four', 'five'],
       active: 0,
-      button: "",
-    };
+      button: ''
+    }
   },
   computed: {
-    componentName() {
-      return "app-text-" + this.buttons[this.active];
-    },
+    componentName () {
+      return 'app-text-' + this.buttons[this.active]
+    }
   },
   components: {
     AppTabButton,
@@ -38,9 +38,9 @@ export default {
     AppTextTwo,
     AppTextThree,
     AppTextFour,
-    AppTextFive,
-  },
-};
+    AppTextFive
+  }
+}
 </script>
 
 <style lang="scss" scoped>

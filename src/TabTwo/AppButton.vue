@@ -19,9 +19,9 @@
 
 <script>
 export default {
-  emits: ["open"],
-  props: ["button", "index", "color", "openText", "descrShow","colorBlock", "colorButton","displayPlus","displayMinus"],
-};
+  emits: ['open'],
+  props: ['button', 'index', 'color', 'openText', 'descrShow', 'colorBlock', 'colorButton', 'displayPlus', 'displayMinus']
+}
 </script>
 
 <style lang="scss" scoped>
