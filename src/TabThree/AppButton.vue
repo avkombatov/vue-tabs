@@ -8,23 +8,22 @@
     <hr />
     <p class="tab-3__descr" v-if="button.isOpen">
       {{ button.text }}
-      
+
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-   
 
-    };
+    }
   },
 
-  props: ["button","colorTitle","index","plusActive", "minusActive"],
- 
-};
+  props: ['button', 'colorTitle', 'index', 'plusActive', 'minusActive']
+
+}
 </script>
 
 <style lang="scss" scoped>

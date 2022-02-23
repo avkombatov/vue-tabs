@@ -8,7 +8,7 @@
       @open="open"
       :colorTitle="button.isOpen ? 'tab-3__title-active' : ''"
       :plusActive="button.isOpen ? 'tab-3__plus-active' : ''"
-       :minusActive="button.isOpen ? 'tab-3__minus-active' : ''"
+      :minusActive="button.isOpen ? 'tab-3__minus-active' : ''"
     ></app-button>
   </div>
 </template>
@@ -37,25 +37,25 @@ export default {
           text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!",
           isOpen: false,
         },
-          {
+        {
           id: 4,
           title: "Сроки доставки",
           text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!",
           isOpen: false,
         },
-          {
+        {
           id: 4,
           title: "Как сделать обмен?",
           text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas",
           isOpen: false,
         },
-          {
+        {
           id: 5,
           title: "Как сделать обмен?",
           text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!",
           isOpen: false,
         },
-           {
+        {
           id: 6,
           title: "Куда и когда вернутся деньги за возвращённый товар?",
           text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!",
@@ -65,9 +65,8 @@ export default {
     };
   },
   methods: {
-   
     open(index) {
-      this.buttons = this.buttons.map((button, i) => {
+      this.buttons.map((button, i) => {
         if (index === i) {
           button.isOpen = !button.isOpen;
         }
