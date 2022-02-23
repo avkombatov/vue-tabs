@@ -8,8 +8,8 @@
 
 <script>
 export default {
-  props: ["button", "index", "back"],
-};
+  props: ['button', 'index', 'back']
+}
 </script>
 
 <style lang="scss" scoped>

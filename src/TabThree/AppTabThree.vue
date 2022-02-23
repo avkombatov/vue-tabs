@@ -14,70 +14,70 @@
 </template>
 
 <script>
-import AppButton from "./AppButton.vue";
+import AppButton from './AppButton.vue'
 export default {
-  data() {
+  data () {
     return {
       buttons: [
         {
           id: 1,
-          title: "Как сделать заказ?",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic reiciendis voluptas vel optio recusandae neque soluta sit? Nulla a ducimus alias iusto facilis maxime ratione officiis ipsam sapiente non!",
-          isOpen: false,
+          title: 'Как сделать заказ?',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic reiciendis voluptas vel optio recusandae neque soluta sit? Nulla a ducimus alias iusto facilis maxime ratione officiis ipsam sapiente non!',
+          isOpen: false
         },
         {
           id: 2,
-          title: "Способы оплаты",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic reiciendis voluptas vel optio recusandae neque soluta sit?",
-          isOpen: false,
+          title: 'Способы оплаты',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic reiciendis voluptas vel optio recusandae neque soluta sit?',
+          isOpen: false
         },
         {
           id: 3,
-          title: "Доставка",
-          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!",
-          isOpen: false,
+          title: 'Доставка',
+          text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!',
+          isOpen: false
         },
         {
           id: 4,
-          title: "Сроки доставки",
-          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!",
-          isOpen: false,
+          title: 'Сроки доставки',
+          text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!',
+          isOpen: false
         },
         {
           id: 4,
-          title: "Как сделать обмен?",
-          text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas",
-          isOpen: false,
+          title: 'Как сделать обмен?',
+          text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas',
+          isOpen: false
         },
         {
           id: 5,
-          title: "Как сделать обмен?",
-          text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!",
-          isOpen: false,
+          title: 'Как сделать обмен?',
+          text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore! Repellendus quos dicta eveniet totam molestiae quibusdam dolore fuga cum velit nobis nihil facilis delectus, excepturi doloribus sed, illo ipsam!',
+          isOpen: false
         },
         {
           id: 6,
-          title: "Куда и когда вернутся деньги за возвращённый товар?",
-          text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!",
-          isOpen: false,
-        },
-      ],
-    };
+          title: 'Куда и когда вернутся деньги за возвращённый товар?',
+          text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tenetur atque saepe eum obcaecati fuga aliquam incidunt. Aliquam debitis obcaecati officiis quas, similique dolor laboriosam molestiae placeat in saepe aperiam adipisci reprehenderit soluta beatae, quos vitae inventore, rerum amet tempore!',
+          isOpen: false
+        }
+      ]
+    }
   },
   methods: {
-    open(index) {
+    open (index) {
       this.buttons.map((button, i) => {
         if (index === i) {
-          button.isOpen = !button.isOpen;
+          button.isOpen = !button.isOpen
         }
-        return button;
-      });
-    },
+        return button
+      })
+    }
   },
   components: {
-    AppButton,
-  },
-};
+    AppButton
+  }
+}
 </script>
 
 <style lang="scss" scoped>

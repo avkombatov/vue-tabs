@@ -16,43 +16,43 @@
 </template>
 
 <script>
-import AppButton from "./AppButton.vue";
-import AppText1 from "./AppText1.vue";
-import AppText2 from "./AppText2.vue";
-import AppText3 from "./AppText3.vue";
+import AppButton from './AppButton.vue'
+import AppText1 from './AppText1.vue'
+import AppText2 from './AppText2.vue'
+import AppText3 from './AppText3.vue'
 
 export default {
-  data() {
+  data () {
     return {
       active: 0,
       buttons: [
         {
           id: 1,
-          title: "Tab-1",
+          title: 'Tab-1'
         },
         {
           id: 2,
-          title: "Tab-2",
+          title: 'Tab-2'
         },
         {
           id: 3,
-          title: "Tab-3",
-        },
-      ],
-    };
+          title: 'Tab-3'
+        }
+      ]
+    }
   },
   computed: {
-    componentName() {
-      return "app-text-" + (this.active+1);
-    },
+    componentName () {
+      return 'app-text-' + (this.active + 1)
+    }
   },
   components: {
     AppButton,
     AppText1,
     AppText2,
     AppText3
-  },
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>
